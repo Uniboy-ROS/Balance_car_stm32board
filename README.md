@@ -41,7 +41,7 @@
 
 
 
-===========
+
  無BOOT板
 ===========
 
@@ -58,6 +58,30 @@
 * 板子內建LED接腳為"PB13"
 * 備註:在未開啟序列埠監控視窗時，按下RESET它也只會RUN程式而已
 * 但是在開啟序列埠監控視窗時，按下RESET他便會中止，所以才能燒錄。
+
+
+
+# STM32互相傳訊
+
+        檢測方式如下:
+        1.首先我們先了解如何傳訊，"USB1 --> FTDI -->' bluepill '<-> Serial2 <->' noboot '<-- USB2"
+        2.因為一開始程式燒進去時都會跑預設的Serial，所以我們會使用Serial2來為兩個板子作傳訊
+        3.接腳: 
+                        GND -> G   
+                        5V  -> 5V                G   ->  G
+                FTDI    TXD -> PA10   bluepill   PA2 ->  PA3    noboot
+                        RXD -> PA9               PA3 ->  PA2
+
+
+![image](https://github.com/Uniboy-ROS/Balance_car_stm32board/blob/master/image/communication.jpg)
+
+
+        4.上述沒問題後，請使用stm32_communication，因應板子型號將各自程式燒進去
+        5.最後成果應該會如下
+
+![image](https://github.com/Uniboy-ROS/Balance_car_stm32board/blob/master/image/port8.PNG)
+![image](https://github.com/Uniboy-ROS/Balance_car_stm32board/blob/master/image/port10.PNG)
+
     
         希望以上能對各位小伙伴有幫助。
     
