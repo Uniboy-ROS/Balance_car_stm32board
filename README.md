@@ -63,9 +63,9 @@
 
 # STM32互相傳訊
 
-* Serial = Serial1 => Usart1 Tx = PA9  , Rx = PA10
-*          Serial2 => Usart2 Tx = PA2  , Rx = PA3
-*          Serial3 => Usart3 Tx = PB10 , Rx = PB11
+* Serial1 => Usart1 Tx = PA9  , Rx = PA10
+* Serial2 => Usart2 Tx = PA2  , Rx = PA3
+* Serial3 => Usart3 Tx = PB10 , Rx = PB11
 
 
         檢測方式如下:
