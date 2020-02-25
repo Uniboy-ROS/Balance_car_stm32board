@@ -63,6 +63,11 @@
 
 # STM32互相傳訊
 
+* Serial = Serial1 => Usart1 Tx = PA9  , Rx = PA10
+*          Serial2 => Usart2 Tx = PA2  , Rx = PA3
+*          Serial3 => Usart3 Tx = PB10 , Rx = PB11
+
+
         檢測方式如下:
         1.首先我們先了解如何傳訊，"USB1 --> FTDI -->' bluepill '<-> Serial2 <->' noboot '<-- USB2"
         2.因為一開始程式燒進去時都會跑預設的Serial，所以我們會使用Serial2來為兩個板子作傳訊
@@ -76,13 +81,13 @@
 ![image](https://github.com/Uniboy-ROS/Balance_car_stm32board/blob/master/image/communication.jpg)
 
 
-        4.上述沒問題後，請使用stm32_communication，因應板子型號將各自程式燒進去
+        4.上述沒問題後，請使用stm32_communication裡面的程式，因應板子型號將各自程式燒進去
         5.最後成果應該會如下
 
 ![image](https://github.com/Uniboy-ROS/Balance_car_stm32board/blob/master/image/port8.PNG)
 ![image](https://github.com/Uniboy-ROS/Balance_car_stm32board/blob/master/image/port10.PNG)
 
-    
+
         希望以上能對各位小伙伴有幫助。
     
 ![image](https://github.com/Uniboy-ROS/Balance_car_stm32board/blob/master/image/greenflash.jpg)
