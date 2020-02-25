@@ -1,4 +1,4 @@
- (board_china) STM32_breathing_LED
+ (board_balance_car) STM32_breathing_LED
 ===================================
 ## 模式介紹
 
@@ -16,7 +16,7 @@
 * 因為此板有整合CH340G(USB轉串口)的芯片，所以這個接口只能用serial燒錄
 * 記得在工具/開發板 將Upload method 設為Serial
     
-        照範例Blink跑，應該會如圖所示
+        照範例" Blink "跑，應該會如圖所示
     
 ![image](https://github.com/Uniboy-ROS/Balance_car_stm32board/blob/master/image/Micro_USB.jpg)
     
@@ -37,7 +37,13 @@
 
 ![image](https://github.com/Uniboy-ROS/Balance_car_stm32board/blob/master/image/ST-LINK1.jpg)
 
-## 無BOOT板
+
+
+
+
+
+ 無BOOT板
+===========
 
 * 如果當有電路板沒有BOOT，全部都接去GND時，該怎麼燒錄呢?
     
