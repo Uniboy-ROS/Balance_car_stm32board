@@ -55,7 +55,7 @@
 
         1.那麼首先請你將 Micro USB 插上
         2.接著開啟 Arduino IDE 的序列埠監控視窗
-        3.然後呢，呼吸燈程式可採用 stm32car_blink
+        3.然後呢，呼吸燈程式請採用 noboot_blink
         4.最後，按下板子上的 RESET 鍵就可以燒錄了喔
 
 * 板子內建 LED 接腳為" PB13 "
