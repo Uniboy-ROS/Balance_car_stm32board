@@ -23,10 +23,10 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {
-  Serial.println("yoooo");
+  Serial.println("Welcome!!");
   digitalWrite(PA4, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(100);              // wait for a second
-  Serial.println("oooooo");
+  delay(500);              // wait for a second
+  Serial.println("Virtuosorobotics");
   digitalWrite(PA4, LOW);    // turn the LED off by making the voltage LOW
-  delay(100);              // wait for a second
+  delay(500);              // wait for a second
 }

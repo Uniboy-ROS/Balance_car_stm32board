@@ -16,7 +16,7 @@
 
 */
 
-int i=0;
+int i = 0;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -27,15 +27,13 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {
-  Serial.println("yoooo");
+
+  Serial.println("Welcome!!");
   digitalWrite(PB13, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(500);              // wait for a second
-  Serial.println("fuck");
+
+  Serial.println("Virtuosorobotics");
   digitalWrite(PB13, LOW);    // turn the LED off by making the voltage LOW
   delay(500);              // wait for a second
-  if (Serial.available() > 0) {
-    i = Serial.read();
-    Serial.write(i);
-  }
 
 }
